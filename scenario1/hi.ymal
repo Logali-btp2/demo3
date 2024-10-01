@@ -1,14 +1,14 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: first-flow-2
+  name: first-example1
   annotations:
-    scenarios.ai.sap.com/description: "First flow in SAP AI Core"
-    scenarios.ai.sap.com/name: "scenario1"
-    executables.ai.sap.com/description: "Send Message"
-    executables.ai.sap.com/name: "Hi Communiy"
+    scenarios.ai.sap.com/description: "Introduction to SAP AI Core"
+    scenarios.ai.sap.com/name: "Tutorial"
+    executables.ai.sap.com/description: "Greets the user"
+    executables.ai.sap.com/name: "Hello Logali"
   labels:
-    scenarios.ai.sap.com/id: "scenario1"
+    scenarios.ai.sap.com/id: "learning"
     ai.sap.com/version: "2.0"
 spec:
   entrypoint: pipeline
@@ -26,4 +26,4 @@ spec:
         - '-c'
       args:
        - |
-        print("HI Community LogaliGroup - SAP AI Core")
+        print("GoobBye LogaliGroup - SAP AI Core")
